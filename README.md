@@ -8,13 +8,15 @@ Built at Olin College of Engineering as a part of an AI class.
 
 Introduction
 =====
-We built a graph database of indexed science journal articles by scraping http://arxiv.org/
+Academic literature is abundant, but rather opaque to the layperson. Usually only the researchers actively working in a given area know their way around the literature. A non-expert has a difficult time identifying the important authors, gauging the level of activity, or obtaining a complete survey of an area of research. Perhaps some of this information can be revealed programmatically. Papers which cite related papers can be represented as a graph. This graph can reveal many things - which authors hold the most authority in a field, which papers are most important, how many articles are clustered toward a given topic. 
 
-We have around 2000 articles, all in the realm of high energy physics and quantum cosomology.
+We built a small version of that graph and experimented with what this graph could provide for us. Our articles came from http://arxiv.org/, an online collection of research papers available to the public domain. Recursively scraping articles by their citations, we represented the articles in a graph database. We have around 2000 articles, all in the realm of high energy physics and quantum cosomology. Our scraping functions ensure a graph as complete as the information arxiv gives us.
 
-Our scraping functions ensure a graph as complete as the information arxiv gives us.
+The vision is to have an intuitive interface with which to search topics, view general information about that topic, and traverse articles within that topic along citations.
 
-We implemented search algorithms to allow the user to search using different ranking criteria.
+The current state of the tool is as follows:
+
+We implemented search algorithms to allow the user to search for topics using different ranking criteria.
 
 Front-end: a search box which allows the user to choose ranking functions
 * Simple boolean match, ranking by article id
