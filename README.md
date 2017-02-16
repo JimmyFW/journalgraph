@@ -116,3 +116,5 @@ Ranking
 =====
 PageRank and TFIDF both return values from 0 to 1 for each article.
 By adding these values, we obtain a ranking function that considers both relevance and importance.
+
+<img src="https://fathomless-castle-35327.herokuapp.com/requests/passive">
